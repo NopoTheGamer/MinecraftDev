@@ -36,7 +36,9 @@ class ForgeResourceLocationDeclaration : GotoDeclarationHandler {
         var path = sourceElement.containingFile.virtualFile.path
         val pathMatcher: Matcher = filePattern.matcher(path)
         if (pathMatcher.matches()) {
-            path = pathMatcher.group(1) + "resources/assets/" + resourceMatcher.group(1) + "/" + resourceMatcher.group(2)
+            path = pathMatcher.group(1) + "resources/assets/" + resourceMatcher.group(1) + "/" + resourceMatcher.group(
+                2
+            )
             val a = VirtualFileManager.getInstance().findFileByUrl(
                 "file://$path"
             )
