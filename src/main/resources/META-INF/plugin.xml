@@ -248,6 +248,7 @@
 
         <fileIconProvider implementation="com.demonwav.mcdev.platform.forge.ForgeFileIconProvider"/>
         <implicitUsageProvider implementation="com.demonwav.mcdev.platform.forge.insight.ForgeImplicitUsageProvider" />
+        <gotoDeclarationHandler implementation="com.demonwav.mcdev.platform.forge.insight.ForgeResourceLocationDeclaration" />
 
         <!-- Forge Annotator -->
         <annotator language="JAVA" implementationClass="com.demonwav.mcdev.platform.forge.inspections.sideonly.SidedProxyAnnotator"/>
